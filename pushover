@@ -23,7 +23,7 @@ SOUND=gamelan
 case "$1" in
   start)
 echo "Starting script pushover "
-curl -s \
+curl -s -o /dev/null \
   --data-urlencode "sound=$SOUND" \
   --data-urlencode "token=$TOKEN" \
   --data-urlencode "user=$USER" \
@@ -32,7 +32,7 @@ curl -s \
 ;;
   stop)
 echo "Stopping script pushover"
-curl -s \
+curl -s -o /dev/null \
   --data-urlencode "sound=$SOUND" \
   --data-urlencode "token=$TOKEN" \
   --data-urlencode "user=$USER" \
