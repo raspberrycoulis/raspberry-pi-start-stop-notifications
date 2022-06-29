@@ -30,7 +30,7 @@ sudo update-rc.d pushover defaults
 ##  Customising the Pushover notification
 The current message is quite straight forward and says "Raspberry Pi (hostname) has just booted." / "Raspberry Pi (hostname) is shutting down." The `hostname` is a variable that will be pulled from the hostname your Raspberry Pi has been given, and this can be changed in the `raspi-config` menu.
 
-The sound the notification makes can also be changed. By default it uses the `gamelan` sound effect - a standard Pushover notification sound - but it can use any of the supported notification sounds found on the [Pushover API documentation](https://pushover.net/api#sounds). If you have updloaded your own custom alert sounds, they are [also supported](https://blog.pushover.net/posts/2021/3/custom-sounds) - you'll just need to change the following snippet in the script:
+The sound the notification makes can also be changed. By default it uses the `gamelan` sound effect - a standard Pushover notification sound - but it can use any of the supported notification sounds found in the [Pushover API documentation](https://pushover.net/api#sounds). If you have uploaded your own custom alert sounds, they are [also supported](https://blog.pushover.net/posts/2021/3/custom-sounds) - you'll just need to change the following snippet in the script:
 
 ```bash
 SOUND=gamelan
